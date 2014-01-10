@@ -6,3 +6,4 @@ apt-get -y update
 apt-get -y install oracle-java8-installer
 apt-get -y install oracle-java7-installer
 apt-get -y install maven
+apt-get -y install gradle
