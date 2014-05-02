@@ -14,5 +14,6 @@ add_gitignore JetBrains
 git config --global color.ui true
 git config --global core.editor vim
 git config --global core.excludesfile ~/.gitignore_global
+git config --global push.default simple
 git config --global user.email "mail@stefan-birkner.de"
 git config --global user.name "Stefan Birkner"
