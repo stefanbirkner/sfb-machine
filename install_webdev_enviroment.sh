@@ -3,3 +3,4 @@
 
 apt-get -y update
 apt-get -y install npm
+npm install -g grunt-cli
