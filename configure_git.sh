@@ -8,8 +8,21 @@ add_gitignore ()
   echo "" >> ~/.gitignore_global
 }
 
+enable_autocomplete_on_macos ()
+{
+  if [ "$(uname -s)" == "Darwin" ]
+  then
+    wget \
+      -O ~/git-completion.sh \
+      https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+    touch ~/.bash_profile
+    echo "source ~/git-completion.sh" >> ~/.bash_profile
+  fi
+}
+
 add_gitignore Eclipse
 add_gitignore JetBrains
+enable_autocomplete_on_macos
 
 git config --global color.ui true
 git config --global core.editor vim
