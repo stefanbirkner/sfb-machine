@@ -4,7 +4,7 @@
 apt-get -y install build-essential
 apt-get -y install devscripts
 apt-get -y install debhelper
-git clone git://github.com/trygvis/intellij-idea-dpkg.git
+git clone -b "2017.2" git://github.com/stefanbirkner/intellij-idea-dpkg.git
 cd intellij-idea-dpkg
 ./build-package -f IU -p debian -u
 dpkg -i repository/debian/intellij-idea-iu-*.deb
