@@ -4,11 +4,11 @@
 apt-get -y install build-essential
 apt-get -y install devscripts
 apt-get -y install debhelper
-git clone -b "2017.2" git://github.com/stefanbirkner/intellij-idea-dpkg.git
-cd intellij-idea-dpkg
-./build-package -f IU -p debian -u
-dpkg -i repository/debian/intellij-idea-iu-*.deb
+git clone git://github.com/stefanbirkner/jetbrains-dpkg.git
+cd jetbrains-dpkg
+./build-package -p idea-iu
+dpkg -i repository/debian/pool/idea-iu-*.deb
 echo "JDK_HOME=/usr/lib/jvm/java-8-oracle" > /etc/default/idea
 echo "M2_HOME=/usr/share/maven" >> /etc/default/idea
 cd ..
-rm -r intellij-idea-dpkg
+rm -r jetbrains-dpkg
