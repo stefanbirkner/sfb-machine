@@ -22,6 +22,7 @@ enable_autocomplete_on_macos ()
 
 add_gitignore Eclipse
 add_gitignore JetBrains
+add_gitignore VisualStudioCode
 enable_autocomplete_on_macos
 
 git config --global color.ui true
