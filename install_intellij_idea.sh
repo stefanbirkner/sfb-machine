@@ -8,7 +8,7 @@ git clone git://github.com/stefanbirkner/jetbrains-dpkg.git
 cd jetbrains-dpkg
 ./build-package -p idea-iu
 dpkg -i repository/debian/pool/idea-iu-*.deb
-echo "JDK_HOME=/usr/lib/jvm/java-8-oracle" > /etc/default/idea
+echo "JDK_HOME=/usr/lib/jvm/java-11-openjdk-amd64" > /etc/default/idea
 echo "M2_HOME=/usr/share/maven" >> /etc/default/idea
 cd ..
 rm -r jetbrains-dpkg
