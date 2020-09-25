@@ -9,3 +9,6 @@ apt-get -y install vagrant
 apt-get -y install vim
 apt-get -y install virtualbox
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+
+snap install code --classic
+
