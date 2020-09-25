@@ -1,7 +1,7 @@
 #!/bin/sh
 # Install software without development context.
 
-echo "deb http://archive.canonical.com/ubuntu/ cosmic partner" > /etc/apt/sources.list.d/canonical_partner.list
+echo "deb http://archive.canonical.com/ubuntu/ eoan partner" > /etc/apt/sources.list.d/canonical_partner.list
 
 apt-get -y update
 apt-get -y install calibre
